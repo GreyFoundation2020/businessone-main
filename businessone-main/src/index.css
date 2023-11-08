@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --home-bg-color: #ffe0e0;
+  --main-bg-color: #ff5b2e;
+  --contact-bg-color: #fff2e2;
+  --reviews-bg-color: #eee0f7;
+}
+.quote{
+  font-family: 'Roboto', sans-serif;
+}
+
+.hideIt{
+  overflow: hidden;
+}
+.showIt{
+  overflow: block;
+}
+body{
+  overflow-x: hidden;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.nav{
+  background-color: var(--home-bg-color);
+}
+h1, h2, h3{
+  font-family: 'Poppins', sans-serif;
+}
+.glassy{
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  backdrop-filter: blur(20px);
+}
+.hideit::-webkit-scrollbar{
+  display: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--contact-bg-color);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ea580c; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+.splide__pagination__page{
+  background-color: green;
+}
+.splide__pagination__page.is-active{
+  background-color: red;
+}
